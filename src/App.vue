@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <boxes 
-     :num=200>
+     :num="200">
     </boxes>
   </div>
 </template>

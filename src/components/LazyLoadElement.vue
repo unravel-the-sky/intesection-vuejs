@@ -47,7 +47,7 @@ export default {
   },
   mounted() {
     this.$slots.default.forEach(slot => {
-      slot.elm.setAttribute("id", "slots_" + this.index++);
+      slot.elm.setAttribute("id", "slot_" + this.index++);
       slot.elm.style.opacity = 0;
       this.$emit("elementAdded", slot.elm);
     });

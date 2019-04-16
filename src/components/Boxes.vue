@@ -1,13 +1,13 @@
 <template>
   <div class="box-holder">
       <lazy-load-stuff>
-          <div v-for="(element, index) in num" :key="element.name" class="boxing">{{index+1}}</div>
-        <!-- <box v-for="(element, index) in num" 
+          <!-- <div v-for="(element, index) in num" :key="element.name" class="boxing">{{index+1}}</div> -->
+        <box v-for="(element, index) in num" 
             :key="element.name" 
             :number="index" 
             :style="{'margin-left': Math.random()*1000 + 'px'}"
             class="boxing">
-        </box> -->
+        </box>
       </lazy-load-stuff>
   </div>
 </template>
@@ -24,6 +24,7 @@
     width: 500px;
     height: 600px;
     margin: 40px;
+    background: green;
 }
 </style>
 

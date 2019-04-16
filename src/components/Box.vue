@@ -42,18 +42,18 @@ export default {
     this.$store.commit("updateBoxStatusId", "box_" + this.number);
   },
   computed: {
-    ...mapGetters(["itemsInDisplay"]),
+    // ...mapGetters(["itemsInDisplay"]),
 
-    isProductInDisplay() {
-      if (this.itemsInDisplay.length === 0) return false;
+    // isProductInDisplay() {
+    //   if (this.itemsInDisplay.length === 0) return false;
 
-      const isDisplayed = this.itemsInDisplay.includes("box_" + this.number);
-      if (isDisplayed) {
-        console.log("meee: ", this.number);
-      }
+    //   const isDisplayed = this.itemsInDisplay.includes("box_" + this.number);
+    //   if (isDisplayed) {
+    //     console.log("meee: ", this.number);
+    //   }
 
-      return isDisplayed;
-    }
+    //   return isDisplayed;
+    // }
   },
   methods: {}
 };
